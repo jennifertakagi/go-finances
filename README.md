@@ -1,5 +1,5 @@
 <p align="left">
-   <img src="docs/logo.png" width="100"/>
+   <img src="docs/logo.png" width="150"/>
 </p>
 
 # Go Finances
@@ -32,12 +32,16 @@
 * Import your outcomes and incomes as CSV file
 * Discover the outcome and income sum, and your total
 
+<br />
+
 # :framed_picture: UI Documentation
 This project has a UI Documentation of reusable components, allowing to test them individually.
 
 <p align="left">
    <img src="docs/go-finances.gif" />
 </p>
+
+<br />
 
 # :construction_worker: Installation
 
@@ -49,10 +53,13 @@ SSH URLs provide access to a Git repository via SSH, a secure protocol. If you h
 
 ```git clone git@github.com:jennifertakagi/go-finances.git```
 
+<br />
 
 # :runner: Getting Started
 
 Go to **backend** and **web** folders and check the README to start each project.
+
+<br />
 
 # :postbox: Faq
 
@@ -60,13 +67,19 @@ Go to **backend** and **web** folders and check the README to start each project
 
 **Answer:** The technologies used in this project are [React JS](https://pt-br.reactjs.org/), [Styled-Components](https://styled-components.com/), [Docker](https://www.docker.com/), [Node JS](https://nodejs.org/en/).
 
+<br />
+
 # :bug: Issues
 
 Feel free to **file a new issue** with a respective title and description on the [Go Finances](https://github.com/jennifertakagi/go-finances/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/jennifertakagi/go-finances/blob/master/CONTRIBUTING.md) to find out about the coding standards.
 
+<br />
+
 # :tada: Contributing
 
 Check out the [contributing](https://github.com/jennifertakagi/go-finances/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+
+<br />
 
 # :closed_book: License
 
