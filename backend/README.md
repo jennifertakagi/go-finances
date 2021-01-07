@@ -1,7 +1,3 @@
-<p align="left">
-   <img src="./docs/logo.png" width="100"/>
-</p>
-
 # Go Finances
 
 > An web application to control your finances! :)
