@@ -26,6 +26,8 @@ You need to install the dependencies in **backend**, so **run the above command 
 
 ```yarn```
 
+<br />
+
 # :runner: Getting Started
 
 Run the following command in **backend** folder start the application in a development environment:
@@ -36,6 +38,7 @@ Run the following command in **backend** folder start the application in a devel
 
 ```yarn dev:server```
 
+<br />
 
 # :closed_book: License
 
