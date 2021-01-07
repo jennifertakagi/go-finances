@@ -1,7 +1,3 @@
-<p align="left">
-   <img src="docs/logo.png" width="100"/>
-</p>
-
 # Go Finances
 
 > An web application to control your finances! :)
@@ -29,11 +25,15 @@ You need to install the dependencies in **web** folder, so **run the above comma
 
 ```yarn```
 
+<br />
+
 # :runner: Getting Started
 
 Run the following command in **web** folder start the application in a development environment:
 
 ```yarn start```
+
+<br />
 
 
 # :closed_book: License
