@@ -1,5 +1,5 @@
 <p align="left">
-   <img src="docs/logo.png" width="100"/>
+   <img src="./docs/logo.png" width="100"/>
 </p>
 
 # Go Finances
