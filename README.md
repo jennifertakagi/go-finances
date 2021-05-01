@@ -1,88 +1,194 @@
-<p align="left">
-   <img src="docs/logo.png" width="150"/>
+<!-- Inspired by https://github.com/jennifertakagi/go-finances -->
+
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/jennifertakagi/go-finances">
+    <img src="docs/logo.png" alt="Logo" width="100">
+  </a>
+
+  <h3 align="center">Go Finances</h3>
+
+  <p align="center">
+      A web application to control your finances!
+    <br />
+    <a href="https://github.com/jennifertakagi/go-finances"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/jennifertakagi/go-finances/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jennifertakagi/go-finances/issues">Request Feature</a>
+  </p>
 </p>
 
-# Go Finances
 
-> An web application to control your finances! :)
 
-[![Author](https://img.shields.io/badge/author-jennifertakagi-ff9000?style=flat-square)](https://github.com/jennifertakagi)
-[![Languages](https://img.shields.io/github/languages/count/jennifertakagi/go-finances?color=%23ff9000&style=flat-square)](#)
-[![Stars](https://img.shields.io/github/stars/jennifertakagi/go-finances?color=ff9000&style=flat-square)](https://github.com/jennifertakagi/go-finances/stargazers)
-[![Forks](https://img.shields.io/github/forks/jennifertakagi/go-finances?color=%23ff9000&style=flat-square)](https://github.com/jennifertakagi/go-finances/network/members)
-[![Contributors](https://img.shields.io/github/contributors/jennifertakagi/go-finances?color=ff9000&style=flat-square)](https://github.com/jennifertakagi/go-finances/graphs/contributors)
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
----
 
-# :pushpin: Table of Contents
 
-* [Features](#rocket-features)
-* [UI Documentation](#framed_picture-ui-documentation)
-* [Installation](#construction_worker-installation)
-* [Getting Started](#runner-getting-started)
-* [FAQ](#postbox-faq)
-* [Found a bug? Missing a specific feature?](#bug-issues)
-* [Contributing](#tada-contributing)
-* [License](#closed_book-license)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-<br />
+[![Product Name Screen Shot][product-screenshot]](#)
 
-# :rocket: Features
+An web application to control your finances.
 
-* Import your outcomes and incomes as CSV file
+Features:
+* Import your outcomes and incomes on a CSV file
 * Discover the outcome and income sum, and your total
 
-<br />
 
-# :framed_picture: UI Documentation
-This project has a UI Documentation of reusable components, allowing to test them individually.
 
-<p align="left">
-   <img src="docs/go-finances.gif" />
-</p>
+### Built With
 
-<br />
+* [React JS](https://pt-br.reactjs.org/)
+* [Styled-Components](https://styled-components.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Node JS](https://nodejs.org/en/)
+* [Express JS](https://expressjs.com/)
+* [CSV Parse](https://csv.js.org/parse/)
+* [Multer](https://www.npmjs.com/package/multer)
+* [Docker](https://www.docker.com/)
+* [Postgres](https://node-postgres.com/)
+* [Typeorm](https://typeorm.io/#/)
 
-# :construction_worker: Installation
 
-**You need to install [YARN](https://yarnpkg.com/) and [DOCKER](https://www.docker.com/), then in order to clone the project via HTTPS, run this command:**
 
-```git clone https://github.com/jennifertakagi/go-finances.git```
+<!-- GETTING STARTED -->
+## Getting Started
 
-SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
+### Prerequisites
 
-```git clone git@github.com:jennifertakagi/go-finances.git```
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-<br />
+* yarn
+  ```sh
+  npm install --global yarn
+  ```
 
-# :runner: Getting Started
+* [docker](https://docs.docker.com/get-docker/) 
 
-Go to **backend** and **web** folders and check the README to start each project.
 
-<br />
+### Installation
 
-# :postbox: Faq
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jennifertakagi/go-finances.git
+   ```
+2. Install packages on **backend** and **web** folders
+   ```sh
+   yarn | npm install
+   ```
+3. Create a Postgress docker image with the following command and options:
+   ```sh
+      docker run --name gostack_gofinances -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+   ```
+4. Run the local environment on **backend**
+   ```sh
+   yarn dev:server | npm run dev:server
+   ```
+4. Run the local environment on **web**
+   ```sh
+   yarn start | npm run start
+   ```
 
-**Question:** What are the technologies used in this project?
 
-**Answer:** The technologies used in this project are [React JS](https://pt-br.reactjs.org/), [Styled-Components](https://styled-components.com/), [Docker](https://www.docker.com/), [Node JS](https://nodejs.org/en/).
 
-<br />
+<!-- ROADMAP -->
+## Roadmap
 
-# :bug: Issues
+See the [open issues](https://github.com/jennifertakagi/go-finances/issues) for a list of proposed features (and known issues).
 
-Feel free to **file a new issue** with a respective title and description on the [Go Finances](https://github.com/jennifertakagi/go-finances/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/jennifertakagi/go-finances/blob/master/CONTRIBUTING.md) to find out about the coding standards.
 
-<br />
 
-# :tada: Contributing
+<!-- CONTRIBUTING -->
+## Contributing
 
-Check out the [contributing](https://github.com/jennifertakagi/go-finances/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-<br />
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-# :closed_book: License
 
-Released in 2020.
-This project is under the [MIT license](https://github.com/jennifertakagi/go-finances/master/LICENSE).
 
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Jennifer Takagi - [@jennitakagi](https://twitter.com/jennitakagi)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Axios](https://github.com/axios/axios)
+* [Polished](https://polished.js.org/)
+* [Cors](https://www.npmjs.com/package/cors)
+* [Reflect Metadata](https://www.npmjs.com/package/reflect-metadata)
+* [Jest](https://jestjs.io/)
+* [ESLint](https://eslint.org/)
+* [Prettier](https://prettier.io/)
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/jennifertakagi/go-finances.svg?style=for-the-badge
+[contributors-url]: https://github.com/jennifertakagi/go-finances/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jennifertakagi/go-finances.svg?style=for-the-badge
+[forks-url]: https://github.com/jennifertakagi/go-finances/network/members
+[stars-shield]: https://img.shields.io/github/stars/jennifertakagi/go-finances.svg?style=for-the-badge
+[stars-url]: https://github.com/jennifertakagi/go-finances/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jennifertakagi/go-finances.svg?style=for-the-badge
+[issues-url]: https://github.com/jennifertakagi/go-finances/issues
+[license-shield]: https://img.shields.io/github/license/jennifertakagi/go-finances.svg?style=for-the-badge
+[license-url]: https://github.com/jennifertakagi/go-finances/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jennifertakagi
+[product-screenshot]: docs/go-finances.gif
