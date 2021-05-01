@@ -118,11 +118,11 @@ Features:
    ```
 3. Create a Postgress docker image with the following command and options
    ```sh
-      docker run --name gostack_gofinances -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+   docker run --name gostack_gofinances -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
    ```
 4. Run database migrations
    ```sh
-     yarn typeorm migration:run | npm run typeorm migration:run
+   yarn typeorm migration:run | npm run typeorm migration:run
    ```
 5. Run the local environment on **backend**
    ```sh
