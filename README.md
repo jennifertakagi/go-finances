@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jennifertakagi/go-finances">
-    <img src="docs/logo.png" alt="Logo" width="100">
+    <img src="docs/logo.png" alt="Logo" width="200">
   </a>
 
   <h3 align="center">Go Finances</h3>
