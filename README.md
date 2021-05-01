@@ -116,15 +116,19 @@ Features:
    ```sh
    yarn | npm install
    ```
-3. Create a Postgress docker image with the following command and options:
+3. Create a Postgress docker image with the following command and options
    ```sh
       docker run --name gostack_gofinances -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
    ```
-4. Run the local environment on **backend**
+4. Run database migrations
+   ```sh
+     yarn typeorm migration:run | npm run typeorm migration:run
+   ```
+5. Run the local environment on **backend**
    ```sh
    yarn dev:server | npm run dev:server
    ```
-4. Run the local environment on **web**
+6. Run the local environment on **web**
    ```sh
    yarn start | npm run start
    ```
